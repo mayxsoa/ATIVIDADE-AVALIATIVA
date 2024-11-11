@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+	
+	setlocale(LC_ALL,"portuguese");
+	
+    int qtdPosi = 0, qtdImpar = 0, vetor [10];
+
+ for(int i = 0; i < 10; i++){
+	
+	printf ("Digite o %d° numero: ", i+1);
+	scanf("%d", &vetor[i]);
+	if (vetor[i]%2==1){
+		qtdImpar++;
+		
+	}
+	if(vetor[i]>0){
+		qtdPosi++;
+		
+	}
+}
+printf("Numeros impares = %d", qtdImpar);
+printf("Numeros positivos = %d", qtdPosi);
+}
