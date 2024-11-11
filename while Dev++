@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(){
+	
+	setlocale(LC_ALL, "portuguese");
+	int num, i = 1;
+	
+	printf ("Digite um numero inteiro: ");
+	scanf ("%d", &num);
+	
+	while(i <=num){
+	
+	if(i % 5 == 0){
+		printf("%d\n", i);
+	} 
+	i++;
+    }	
+	}
